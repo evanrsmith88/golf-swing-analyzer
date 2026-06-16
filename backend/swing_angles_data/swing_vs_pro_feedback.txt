@@ -1,0 +1,88 @@
+User swing vs all pro benchmark
+======================================================================
+
+Setup
+----------------------------------------------------------------------
+Left arm angle: user=160.46°, pro=152.43° ± 25.8°, status=within_pro_range
+Right arm angle: user=155.54°, pro=133.39° ± 38.16°, status=within_pro_range
+Spine angle: user=28.06°, pro=24.96° ± 10.1°, status=within_pro_range
+Hip angle: user=144.55°, pro=137.42° ± 10.45°, status=within_pro_range
+Shoulder tilt: user=75.38°, pro=27.0° ± 9.48°, status=above_pro_range
+Knee bend: user=12.11°, pro=23.85° ± 9.67°, status=below_pro_range
+Shoulder rotation: user=75.38°, pro=27.0° ± 9.48°, status=above_pro_range
+Hip rotation: user=23.67°, pro=13.82° ± 2.6°, status=above_pro_range
+X-factor: user=51.7°, pro=13.18° ± 7.57°, status=above_pro_range
+Coaching feedback:
+- Setup knee flex is lower than pro range. Add slight athletic flex for balance and ground force use.
+
+Takeaway
+----------------------------------------------------------------------
+Left arm angle: user=171.31°, pro=162.93° ± 21.71°, status=within_pro_range
+Right arm angle: user=138.27°, pro=126.42° ± 19.38°, status=within_pro_range
+Spine angle: user=29.85°, pro=27.62° ± 8.65°, status=within_pro_range
+Hip angle: user=141.84°, pro=133.63° ± 13.18°, status=within_pro_range
+Shoulder tilt: user=27.47°, pro=11.44° ± 9.48°, status=above_pro_range
+Knee bend: user=18.88°, pro=31.14° ± 8.97°, status=below_pro_range
+Shoulder rotation: user=27.47°, pro=11.44° ± 9.48°, status=above_pro_range
+Hip rotation: user=12.09°, pro=8.06° ± 6.77°, status=within_pro_range
+X-factor: user=15.38°, pro=4.64° ± 2.89°, status=above_pro_range
+
+Top of backswing
+----------------------------------------------------------------------
+Left arm angle: user=81.22°, pro=111.95° ± 21.74°, status=below_pro_range
+Right arm angle: user=161.24°, pro=156.84° ± 13.28°, status=within_pro_range
+Spine angle: user=14.45°, pro=16.4° ± 3.13°, status=within_pro_range
+Hip angle: user=162.22°, pro=162.78° ± 4.93°, status=within_pro_range
+Shoulder tilt: user=15.89°, pro=12.63° ± 4.09°, status=within_pro_range
+Knee bend: user=1.63°, pro=8.91° ± 8.71°, status=within_pro_range
+Shoulder rotation: user=15.89°, pro=12.63° ± 4.09°, status=within_pro_range
+Hip rotation: user=10.86°, pro=5.3° ± 1.68°, status=above_pro_range
+X-factor: user=5.03°, pro=7.67° ± 4.57°, status=within_pro_range
+Coaching feedback:
+- Your lead arm bends more than pro range at the top. Keep the lead arm longer to create a wider arc and improve consistency.
+- Your hips are rotating more than pro range at the top. Keep some resistance in the lower body to preserve stretch.
+
+Downswing
+----------------------------------------------------------------------
+Left arm angle: user=53.01°, pro=106.76° ± 36.61°, status=below_pro_range
+Right arm angle: user=115.39°, pro=149.11° ± 14.38°, status=below_pro_range
+Spine angle: user=9.47°, pro=18.93° ± 11.15°, status=within_pro_range
+Hip angle: user=170.74°, pro=156.05° ± 19.63°, status=within_pro_range
+Shoulder tilt: user=3.1°, pro=18.75° ± 23.16°, status=within_pro_range
+Knee bend: user=9.7°, pro=15.0° ± 7.66°, status=within_pro_range
+Shoulder rotation: user=3.1°, pro=18.75° ± 23.16°, status=within_pro_range
+Hip rotation: user=1.82°, pro=11.04° ± 13.95°, status=within_pro_range
+X-factor: user=1.28°, pro=9.61° ± 8.92°, status=within_pro_range
+
+Impact
+----------------------------------------------------------------------
+Left arm angle: user=55.86°, pro=141.93° ± 47.32°, status=below_pro_range
+Right arm angle: user=148.22°, pro=152.92° ± 29.63°, status=within_pro_range
+Spine angle: user=7.09°, pro=19.1° ± 13.32°, status=within_pro_range
+Hip angle: user=172.35°, pro=148.54° ± 16.8°, status=above_pro_range
+Shoulder tilt: user=2.01°, pro=29.57° ± 27.69°, status=within_pro_range
+Knee bend: user=7.92°, pro=15.62° ± 8.28°, status=within_pro_range
+Shoulder rotation: user=2.01°, pro=29.57° ± 27.69°, status=within_pro_range
+Hip rotation: user=0.97°, pro=27.75° ± 28.91°, status=within_pro_range
+X-factor: user=1.04°, pro=23.48° ± 24.95°, status=within_pro_range
+Coaching feedback:
+- Lead arm is more bent than pro range at impact. Focus on width and handle control through strike.
+
+Follow-through
+----------------------------------------------------------------------
+Left arm angle: user=55.86°, pro=167.76° ± 4.71°, status=below_pro_range
+Right arm angle: user=148.22°, pro=167.23° ± 5.51°, status=below_pro_range
+Spine angle: user=7.09°, pro=24.1° ± 11.62°, status=below_pro_range
+Hip angle: user=172.35°, pro=140.61° ± 12.28°, status=above_pro_range
+Shoulder tilt: user=2.01°, pro=24.35° ± 25.49°, status=within_pro_range
+Knee bend: user=7.92°, pro=19.45° ± 10.36°, status=below_pro_range
+Shoulder rotation: user=2.01°, pro=24.35° ± 25.49°, status=within_pro_range
+Hip rotation: user=0.97°, pro=20.78° ± 21.85°, status=within_pro_range
+X-factor: user=1.04°, pro=21.54° ± 15.93°, status=below_pro_range
+
+Top actionable priorities
+----------------------------------------------------------------------
+- [Setup] Setup knee flex is lower than pro range. Add slight athletic flex for balance and ground force use.
+- [Top of backswing] Your lead arm bends more than pro range at the top. Keep the lead arm longer to create a wider arc and improve consistency.
+- [Top of backswing] Your hips are rotating more than pro range at the top. Keep some resistance in the lower body to preserve stretch.
+- [Impact] Lead arm is more bent than pro range at impact. Focus on width and handle control through strike.

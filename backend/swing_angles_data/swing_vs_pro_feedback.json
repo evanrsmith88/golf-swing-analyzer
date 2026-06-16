@@ -1,0 +1,649 @@
+{
+  "benchmark_type": "all",
+  "user_video": "sample_videos/swing.mp4",
+  "phase_analysis": {
+    "setup": {
+      "phase_label": "Setup",
+      "metrics": {
+        "left_arm_angle": {
+          "user": 160.46,
+          "pro_mean": 152.43,
+          "pro_std": 25.8,
+          "pro_range_1std": [
+            126.63,
+            178.23
+          ],
+          "status": "within_pro_range",
+          "delta_from_mean": 8.03
+        },
+        "right_arm_angle": {
+          "user": 155.54,
+          "pro_mean": 133.39,
+          "pro_std": 38.16,
+          "pro_range_1std": [
+            95.23,
+            171.55
+          ],
+          "status": "within_pro_range",
+          "delta_from_mean": 22.15
+        },
+        "spine_angle": {
+          "user": 28.06,
+          "pro_mean": 24.96,
+          "pro_std": 10.1,
+          "pro_range_1std": [
+            14.86,
+            35.06
+          ],
+          "status": "within_pro_range",
+          "delta_from_mean": 3.1
+        },
+        "hip_angle": {
+          "user": 144.55,
+          "pro_mean": 137.42,
+          "pro_std": 10.45,
+          "pro_range_1std": [
+            126.97,
+            147.87
+          ],
+          "status": "within_pro_range",
+          "delta_from_mean": 7.13
+        },
+        "shoulder_tilt": {
+          "user": 75.38,
+          "pro_mean": 27.0,
+          "pro_std": 9.48,
+          "pro_range_1std": [
+            17.52,
+            36.48
+          ],
+          "status": "above_pro_range",
+          "delta_from_mean": 48.38
+        },
+        "knee_bend": {
+          "user": 12.11,
+          "pro_mean": 23.85,
+          "pro_std": 9.67,
+          "pro_range_1std": [
+            14.18,
+            33.52
+          ],
+          "status": "below_pro_range",
+          "delta_from_mean": -11.74
+        },
+        "shoulder_rotation": {
+          "user": 75.38,
+          "pro_mean": 27.0,
+          "pro_std": 9.48,
+          "pro_range_1std": [
+            17.52,
+            36.48
+          ],
+          "status": "above_pro_range",
+          "delta_from_mean": 48.38
+        },
+        "hip_rotation": {
+          "user": 23.67,
+          "pro_mean": 13.82,
+          "pro_std": 2.6,
+          "pro_range_1std": [
+            11.22,
+            16.42
+          ],
+          "status": "above_pro_range",
+          "delta_from_mean": 9.85
+        },
+        "x_factor": {
+          "user": 51.7,
+          "pro_mean": 13.18,
+          "pro_std": 7.57,
+          "pro_range_1std": [
+            5.61,
+            20.75
+          ],
+          "status": "above_pro_range",
+          "delta_from_mean": 38.52
+        }
+      },
+      "feedback": [
+        "Setup knee flex is lower than pro range. Add slight athletic flex for balance and ground force use."
+      ]
+    },
+    "takeaway": {
+      "phase_label": "Takeaway",
+      "metrics": {
+        "left_arm_angle": {
+          "user": 171.31,
+          "pro_mean": 162.93,
+          "pro_std": 21.71,
+          "pro_range_1std": [
+            141.22,
+            184.64
+          ],
+          "status": "within_pro_range",
+          "delta_from_mean": 8.38
+        },
+        "right_arm_angle": {
+          "user": 138.27,
+          "pro_mean": 126.42,
+          "pro_std": 19.38,
+          "pro_range_1std": [
+            107.04,
+            145.8
+          ],
+          "status": "within_pro_range",
+          "delta_from_mean": 11.85
+        },
+        "spine_angle": {
+          "user": 29.85,
+          "pro_mean": 27.62,
+          "pro_std": 8.65,
+          "pro_range_1std": [
+            18.97,
+            36.27
+          ],
+          "status": "within_pro_range",
+          "delta_from_mean": 2.23
+        },
+        "hip_angle": {
+          "user": 141.84,
+          "pro_mean": 133.63,
+          "pro_std": 13.18,
+          "pro_range_1std": [
+            120.45,
+            146.81
+          ],
+          "status": "within_pro_range",
+          "delta_from_mean": 8.21
+        },
+        "shoulder_tilt": {
+          "user": 27.47,
+          "pro_mean": 11.44,
+          "pro_std": 9.48,
+          "pro_range_1std": [
+            1.96,
+            20.92
+          ],
+          "status": "above_pro_range",
+          "delta_from_mean": 16.03
+        },
+        "knee_bend": {
+          "user": 18.88,
+          "pro_mean": 31.14,
+          "pro_std": 8.97,
+          "pro_range_1std": [
+            22.17,
+            40.11
+          ],
+          "status": "below_pro_range",
+          "delta_from_mean": -12.26
+        },
+        "shoulder_rotation": {
+          "user": 27.47,
+          "pro_mean": 11.44,
+          "pro_std": 9.48,
+          "pro_range_1std": [
+            1.96,
+            20.92
+          ],
+          "status": "above_pro_range",
+          "delta_from_mean": 16.03
+        },
+        "hip_rotation": {
+          "user": 12.09,
+          "pro_mean": 8.06,
+          "pro_std": 6.77,
+          "pro_range_1std": [
+            1.29,
+            14.83
+          ],
+          "status": "within_pro_range",
+          "delta_from_mean": 4.03
+        },
+        "x_factor": {
+          "user": 15.38,
+          "pro_mean": 4.64,
+          "pro_std": 2.89,
+          "pro_range_1std": [
+            1.75,
+            7.53
+          ],
+          "status": "above_pro_range",
+          "delta_from_mean": 10.74
+        }
+      },
+      "feedback": []
+    },
+    "top_of_backswing": {
+      "phase_label": "Top of backswing",
+      "metrics": {
+        "left_arm_angle": {
+          "user": 81.22,
+          "pro_mean": 111.95,
+          "pro_std": 21.74,
+          "pro_range_1std": [
+            90.21,
+            133.69
+          ],
+          "status": "below_pro_range",
+          "delta_from_mean": -30.73
+        },
+        "right_arm_angle": {
+          "user": 161.24,
+          "pro_mean": 156.84,
+          "pro_std": 13.28,
+          "pro_range_1std": [
+            143.56,
+            170.12
+          ],
+          "status": "within_pro_range",
+          "delta_from_mean": 4.4
+        },
+        "spine_angle": {
+          "user": 14.45,
+          "pro_mean": 16.4,
+          "pro_std": 3.13,
+          "pro_range_1std": [
+            13.27,
+            19.53
+          ],
+          "status": "within_pro_range",
+          "delta_from_mean": -1.95
+        },
+        "hip_angle": {
+          "user": 162.22,
+          "pro_mean": 162.78,
+          "pro_std": 4.93,
+          "pro_range_1std": [
+            157.85,
+            167.71
+          ],
+          "status": "within_pro_range",
+          "delta_from_mean": -0.56
+        },
+        "shoulder_tilt": {
+          "user": 15.89,
+          "pro_mean": 12.63,
+          "pro_std": 4.09,
+          "pro_range_1std": [
+            8.54,
+            16.72
+          ],
+          "status": "within_pro_range",
+          "delta_from_mean": 3.26
+        },
+        "knee_bend": {
+          "user": 1.63,
+          "pro_mean": 8.91,
+          "pro_std": 8.71,
+          "pro_range_1std": [
+            0.2,
+            17.62
+          ],
+          "status": "within_pro_range",
+          "delta_from_mean": -7.28
+        },
+        "shoulder_rotation": {
+          "user": 15.89,
+          "pro_mean": 12.63,
+          "pro_std": 4.09,
+          "pro_range_1std": [
+            8.54,
+            16.72
+          ],
+          "status": "within_pro_range",
+          "delta_from_mean": 3.26
+        },
+        "hip_rotation": {
+          "user": 10.86,
+          "pro_mean": 5.3,
+          "pro_std": 1.68,
+          "pro_range_1std": [
+            3.62,
+            6.98
+          ],
+          "status": "above_pro_range",
+          "delta_from_mean": 5.56
+        },
+        "x_factor": {
+          "user": 5.03,
+          "pro_mean": 7.67,
+          "pro_std": 4.57,
+          "pro_range_1std": [
+            3.1,
+            12.24
+          ],
+          "status": "within_pro_range",
+          "delta_from_mean": -2.64
+        }
+      },
+      "feedback": [
+        "Your lead arm bends more than pro range at the top. Keep the lead arm longer to create a wider arc and improve consistency.",
+        "Your hips are rotating more than pro range at the top. Keep some resistance in the lower body to preserve stretch."
+      ]
+    },
+    "downswing": {
+      "phase_label": "Downswing",
+      "metrics": {
+        "left_arm_angle": {
+          "user": 53.01,
+          "pro_mean": 106.76,
+          "pro_std": 36.61,
+          "pro_range_1std": [
+            70.15,
+            143.37
+          ],
+          "status": "below_pro_range",
+          "delta_from_mean": -53.75
+        },
+        "right_arm_angle": {
+          "user": 115.39,
+          "pro_mean": 149.11,
+          "pro_std": 14.38,
+          "pro_range_1std": [
+            134.73,
+            163.49
+          ],
+          "status": "below_pro_range",
+          "delta_from_mean": -33.72
+        },
+        "spine_angle": {
+          "user": 9.47,
+          "pro_mean": 18.93,
+          "pro_std": 11.15,
+          "pro_range_1std": [
+            7.78,
+            30.08
+          ],
+          "status": "within_pro_range",
+          "delta_from_mean": -9.46
+        },
+        "hip_angle": {
+          "user": 170.74,
+          "pro_mean": 156.05,
+          "pro_std": 19.63,
+          "pro_range_1std": [
+            136.42,
+            175.68
+          ],
+          "status": "within_pro_range",
+          "delta_from_mean": 14.69
+        },
+        "shoulder_tilt": {
+          "user": 3.1,
+          "pro_mean": 18.75,
+          "pro_std": 23.16,
+          "pro_range_1std": [
+            -4.41,
+            41.91
+          ],
+          "status": "within_pro_range",
+          "delta_from_mean": -15.65
+        },
+        "knee_bend": {
+          "user": 9.7,
+          "pro_mean": 15.0,
+          "pro_std": 7.66,
+          "pro_range_1std": [
+            7.34,
+            22.66
+          ],
+          "status": "within_pro_range",
+          "delta_from_mean": -5.3
+        },
+        "shoulder_rotation": {
+          "user": 3.1,
+          "pro_mean": 18.75,
+          "pro_std": 23.16,
+          "pro_range_1std": [
+            -4.41,
+            41.91
+          ],
+          "status": "within_pro_range",
+          "delta_from_mean": -15.65
+        },
+        "hip_rotation": {
+          "user": 1.82,
+          "pro_mean": 11.04,
+          "pro_std": 13.95,
+          "pro_range_1std": [
+            -2.91,
+            24.99
+          ],
+          "status": "within_pro_range",
+          "delta_from_mean": -9.22
+        },
+        "x_factor": {
+          "user": 1.28,
+          "pro_mean": 9.61,
+          "pro_std": 8.92,
+          "pro_range_1std": [
+            0.69,
+            18.53
+          ],
+          "status": "within_pro_range",
+          "delta_from_mean": -8.33
+        }
+      },
+      "feedback": []
+    },
+    "impact": {
+      "phase_label": "Impact",
+      "metrics": {
+        "left_arm_angle": {
+          "user": 55.86,
+          "pro_mean": 141.93,
+          "pro_std": 47.32,
+          "pro_range_1std": [
+            94.61,
+            189.25
+          ],
+          "status": "below_pro_range",
+          "delta_from_mean": -86.07
+        },
+        "right_arm_angle": {
+          "user": 148.22,
+          "pro_mean": 152.92,
+          "pro_std": 29.63,
+          "pro_range_1std": [
+            123.29,
+            182.55
+          ],
+          "status": "within_pro_range",
+          "delta_from_mean": -4.7
+        },
+        "spine_angle": {
+          "user": 7.09,
+          "pro_mean": 19.1,
+          "pro_std": 13.32,
+          "pro_range_1std": [
+            5.78,
+            32.42
+          ],
+          "status": "within_pro_range",
+          "delta_from_mean": -12.01
+        },
+        "hip_angle": {
+          "user": 172.35,
+          "pro_mean": 148.54,
+          "pro_std": 16.8,
+          "pro_range_1std": [
+            131.74,
+            165.34
+          ],
+          "status": "above_pro_range",
+          "delta_from_mean": 23.81
+        },
+        "shoulder_tilt": {
+          "user": 2.01,
+          "pro_mean": 29.57,
+          "pro_std": 27.69,
+          "pro_range_1std": [
+            1.88,
+            57.26
+          ],
+          "status": "within_pro_range",
+          "delta_from_mean": -27.56
+        },
+        "knee_bend": {
+          "user": 7.92,
+          "pro_mean": 15.62,
+          "pro_std": 8.28,
+          "pro_range_1std": [
+            7.34,
+            23.9
+          ],
+          "status": "within_pro_range",
+          "delta_from_mean": -7.7
+        },
+        "shoulder_rotation": {
+          "user": 2.01,
+          "pro_mean": 29.57,
+          "pro_std": 27.69,
+          "pro_range_1std": [
+            1.88,
+            57.26
+          ],
+          "status": "within_pro_range",
+          "delta_from_mean": -27.56
+        },
+        "hip_rotation": {
+          "user": 0.97,
+          "pro_mean": 27.75,
+          "pro_std": 28.91,
+          "pro_range_1std": [
+            -1.16,
+            56.66
+          ],
+          "status": "within_pro_range",
+          "delta_from_mean": -26.78
+        },
+        "x_factor": {
+          "user": 1.04,
+          "pro_mean": 23.48,
+          "pro_std": 24.95,
+          "pro_range_1std": [
+            -1.47,
+            48.43
+          ],
+          "status": "within_pro_range",
+          "delta_from_mean": -22.44
+        }
+      },
+      "feedback": [
+        "Lead arm is more bent than pro range at impact. Focus on width and handle control through strike."
+      ]
+    },
+    "follow_through": {
+      "phase_label": "Follow-through",
+      "metrics": {
+        "left_arm_angle": {
+          "user": 55.86,
+          "pro_mean": 167.76,
+          "pro_std": 4.71,
+          "pro_range_1std": [
+            163.05,
+            172.47
+          ],
+          "status": "below_pro_range",
+          "delta_from_mean": -111.9
+        },
+        "right_arm_angle": {
+          "user": 148.22,
+          "pro_mean": 167.23,
+          "pro_std": 5.51,
+          "pro_range_1std": [
+            161.72,
+            172.74
+          ],
+          "status": "below_pro_range",
+          "delta_from_mean": -19.01
+        },
+        "spine_angle": {
+          "user": 7.09,
+          "pro_mean": 24.1,
+          "pro_std": 11.62,
+          "pro_range_1std": [
+            12.48,
+            35.72
+          ],
+          "status": "below_pro_range",
+          "delta_from_mean": -17.01
+        },
+        "hip_angle": {
+          "user": 172.35,
+          "pro_mean": 140.61,
+          "pro_std": 12.28,
+          "pro_range_1std": [
+            128.33,
+            152.89
+          ],
+          "status": "above_pro_range",
+          "delta_from_mean": 31.74
+        },
+        "shoulder_tilt": {
+          "user": 2.01,
+          "pro_mean": 24.35,
+          "pro_std": 25.49,
+          "pro_range_1std": [
+            -1.14,
+            49.84
+          ],
+          "status": "within_pro_range",
+          "delta_from_mean": -22.34
+        },
+        "knee_bend": {
+          "user": 7.92,
+          "pro_mean": 19.45,
+          "pro_std": 10.36,
+          "pro_range_1std": [
+            9.09,
+            29.81
+          ],
+          "status": "below_pro_range",
+          "delta_from_mean": -11.53
+        },
+        "shoulder_rotation": {
+          "user": 2.01,
+          "pro_mean": 24.35,
+          "pro_std": 25.49,
+          "pro_range_1std": [
+            -1.14,
+            49.84
+          ],
+          "status": "within_pro_range",
+          "delta_from_mean": -22.34
+        },
+        "hip_rotation": {
+          "user": 0.97,
+          "pro_mean": 20.78,
+          "pro_std": 21.85,
+          "pro_range_1std": [
+            -1.07,
+            42.63
+          ],
+          "status": "within_pro_range",
+          "delta_from_mean": -19.81
+        },
+        "x_factor": {
+          "user": 1.04,
+          "pro_mean": 21.54,
+          "pro_std": 15.93,
+          "pro_range_1std": [
+            5.61,
+            37.47
+          ],
+          "status": "below_pro_range",
+          "delta_from_mean": -20.5
+        }
+      },
+      "feedback": []
+    }
+  },
+  "summary_feedback": [
+    "[Setup] Setup knee flex is lower than pro range. Add slight athletic flex for balance and ground force use.",
+    "[Top of backswing] Your lead arm bends more than pro range at the top. Keep the lead arm longer to create a wider arc and improve consistency.",
+    "[Top of backswing] Your hips are rotating more than pro range at the top. Keep some resistance in the lower body to preserve stretch.",
+    "[Impact] Lead arm is more bent than pro range at impact. Focus on width and handle control through strike."
+  ]
+}
