@@ -23,3 +23,20 @@ def calculate_angle(a, b, c):
         angle = 360 - angle
 
     return angle
+
+def calculate_spine_angle(shoulder_midpoint, hip_midpoint):
+    """
+    Calculates how much the spine leans away from vertical.
+    0 degrees = straight up and down
+    Larger angle = more forward/backward tilt
+    """
+
+    sx, sy = shoulder_midpoint
+    hx, hy = hip_midpoint
+
+    dx = sx - hx
+    dy = sy - hy
+
+    angle = math.degrees(math.atan2(abs(dx), abs(dy)))
+
+    return angle

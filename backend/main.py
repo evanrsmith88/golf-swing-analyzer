@@ -1,7 +1,11 @@
 import cv2
 import mediapipe as mp
 import os
-from angles import calculate_angle
+from angles import calculate_angle, calculate_spine_angle
+
+def draw_text(frame, text, position):
+    cv2.putText(frame, text, position, cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 0, 0), 5)
+    cv2.putText(frame, text, position, cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 0, 255), 2)
 
 mp_pose = mp.solutions.pose
 mp_draw = mp.solutions.drawing_utils
@@ -71,6 +75,39 @@ with mp_pose.Pose() as pose:
                 1,
                 (0, 0, 255),
                 2
+            )
+
+            # Spine angle
+            left_shoulder = landmarks[mp_pose.PoseLandmark.LEFT_SHOULDER.value]
+            right_shoulder = landmarks[mp_pose.PoseLandmark.RIGHT_SHOULDER.value]
+            left_hip = landmarks[mp_pose.PoseLandmark.LEFT_HIP.value]
+            right_hip = landmarks[mp_pose.PoseLandmark.RIGHT_HIP.value]
+
+            left_shoulder_point = (left_shoulder.x * width, left_shoulder.y * height)
+            right_shoulder_point = (right_shoulder.x * width, right_shoulder.y * height)
+            left_hip_point = (left_hip.x * width, left_hip.y * height)
+            right_hip_point = (right_hip.x * width, right_hip.y * height)
+
+            shoulder_midpoint = (
+                (left_shoulder_point[0] + right_shoulder_point[0]) / 2,
+                (left_shoulder_point[1] + right_shoulder_point[1]) / 2
+            )
+
+            hip_midpoint = (
+                (left_hip_point[0] + right_hip_point[0]) / 2,
+                (left_hip_point[1] + right_hip_point[1]) / 2
+            )
+
+            spine_angle = calculate_spine_angle(shoulder_midpoint, hip_midpoint)
+
+            draw_text(frame, f"Spine angle: {int(spine_angle)} deg", (50, 150))
+
+            cv2.line(
+                frame,
+                (int(shoulder_midpoint[0]), int(shoulder_midpoint[1])),
+                (int(hip_midpoint[0]), int(hip_midpoint[1])),
+                (0, 0, 255),
+                3
             )
             mp_draw.draw_landmarks(
                 frame,
