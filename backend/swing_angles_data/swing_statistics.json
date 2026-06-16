@@ -1,0 +1,854 @@
+{
+  "driver": {
+    "setup": {
+      "left_arm_angle": {
+        "mean": 165.66,
+        "std": 18.68,
+        "count": 4
+      },
+      "right_arm_angle": {
+        "mean": 135.21,
+        "std": 45.06,
+        "count": 4
+      },
+      "spine_angle": {
+        "mean": 21.84,
+        "std": 10.91,
+        "count": 4
+      },
+      "hip_angle": {
+        "mean": 141.48,
+        "std": 10.53,
+        "count": 4
+      },
+      "shoulder_tilt": {
+        "mean": 21.35,
+        "std": 5.86,
+        "count": 4
+      },
+      "knee_bend": {
+        "mean": 21.64,
+        "std": 11.2,
+        "count": 4
+      },
+      "shoulder_rotation": {
+        "mean": 21.35,
+        "std": 5.86,
+        "count": 4
+      },
+      "hip_rotation": {
+        "mean": 13.01,
+        "std": 2.75,
+        "count": 4
+      },
+      "x_factor": {
+        "mean": 8.34,
+        "std": 3.73,
+        "count": 4
+      }
+    },
+    "takeaway": {
+      "left_arm_angle": {
+        "mean": 158.33,
+        "std": 25.35,
+        "count": 4
+      },
+      "right_arm_angle": {
+        "mean": 125.98,
+        "std": 23.67,
+        "count": 4
+      },
+      "spine_angle": {
+        "mean": 23.81,
+        "std": 8.26,
+        "count": 4
+      },
+      "hip_angle": {
+        "mean": 138.54,
+        "std": 13.7,
+        "count": 4
+      },
+      "shoulder_tilt": {
+        "mean": 13.65,
+        "std": 9.99,
+        "count": 4
+      },
+      "knee_bend": {
+        "mean": 29.97,
+        "std": 10.2,
+        "count": 4
+      },
+      "shoulder_rotation": {
+        "mean": 13.65,
+        "std": 9.99,
+        "count": 4
+      },
+      "hip_rotation": {
+        "mean": 8.32,
+        "std": 7.98,
+        "count": 4
+      },
+      "x_factor": {
+        "mean": 5.33,
+        "std": 3.31,
+        "count": 4
+      }
+    },
+    "top_of_backswing": {
+      "left_arm_angle": {
+        "mean": 114.33,
+        "std": 24.43,
+        "count": 4
+      },
+      "right_arm_angle": {
+        "mean": 154.72,
+        "std": 15.65,
+        "count": 4
+      },
+      "spine_angle": {
+        "mean": 15.84,
+        "std": 1.9,
+        "count": 4
+      },
+      "hip_angle": {
+        "mean": 164.78,
+        "std": 4.06,
+        "count": 4
+      },
+      "shoulder_tilt": {
+        "mean": 13.05,
+        "std": 3.55,
+        "count": 4
+      },
+      "knee_bend": {
+        "mean": 10.95,
+        "std": 9.93,
+        "count": 4
+      },
+      "shoulder_rotation": {
+        "mean": 13.05,
+        "std": 3.55,
+        "count": 4
+      },
+      "hip_rotation": {
+        "mean": 5.64,
+        "std": 1.97,
+        "count": 4
+      },
+      "x_factor": {
+        "mean": 7.93,
+        "std": 4.34,
+        "count": 4
+      }
+    },
+    "downswing": {
+      "left_arm_angle": {
+        "mean": 81.72,
+        "std": 11.0,
+        "count": 4
+      },
+      "right_arm_angle": {
+        "mean": 141.63,
+        "std": 11.74,
+        "count": 4
+      },
+      "spine_angle": {
+        "mean": 11.39,
+        "std": 3.39,
+        "count": 4
+      },
+      "hip_angle": {
+        "mean": 169.56,
+        "std": 5.36,
+        "count": 4
+      },
+      "shoulder_tilt": {
+        "mean": 9.32,
+        "std": 5.57,
+        "count": 4
+      },
+      "knee_bend": {
+        "mean": 10.17,
+        "std": 4.24,
+        "count": 4
+      },
+      "shoulder_rotation": {
+        "mean": 9.32,
+        "std": 5.57,
+        "count": 4
+      },
+      "hip_rotation": {
+        "mean": 4.22,
+        "std": 1.23,
+        "count": 4
+      },
+      "x_factor": {
+        "mean": 7.17,
+        "std": 4.26,
+        "count": 4
+      }
+    },
+    "impact": {
+      "left_arm_angle": {
+        "mean": 136.88,
+        "std": 57.17,
+        "count": 4
+      },
+      "right_arm_angle": {
+        "mean": 149.61,
+        "std": 35.83,
+        "count": 4
+      },
+      "spine_angle": {
+        "mean": 11.73,
+        "std": 9.86,
+        "count": 4
+      },
+      "hip_angle": {
+        "mean": 158.31,
+        "std": 11.54,
+        "count": 4
+      },
+      "shoulder_tilt": {
+        "mean": 10.14,
+        "std": 2.38,
+        "count": 4
+      },
+      "knee_bend": {
+        "mean": 11.13,
+        "std": 6.5,
+        "count": 4
+      },
+      "shoulder_rotation": {
+        "mean": 10.14,
+        "std": 2.38,
+        "count": 4
+      },
+      "hip_rotation": {
+        "mean": 21.15,
+        "std": 30.59,
+        "count": 4
+      },
+      "x_factor": {
+        "mean": 21.48,
+        "std": 25.12,
+        "count": 4
+      }
+    },
+    "follow_through": {
+      "left_arm_angle": {
+        "mean": 169.87,
+        "std": 4.44,
+        "count": 4
+      },
+      "right_arm_angle": {
+        "mean": 169.16,
+        "std": 5.02,
+        "count": 4
+      },
+      "spine_angle": {
+        "mean": 19.2,
+        "std": 11.12,
+        "count": 4
+      },
+      "hip_angle": {
+        "mean": 146.38,
+        "std": 10.99,
+        "count": 4
+      },
+      "shoulder_tilt": {
+        "mean": 16.23,
+        "std": 6.81,
+        "count": 4
+      },
+      "knee_bend": {
+        "mean": 16.92,
+        "std": 11.89,
+        "count": 4
+      },
+      "shoulder_rotation": {
+        "mean": 16.23,
+        "std": 6.81,
+        "count": 4
+      },
+      "hip_rotation": {
+        "mean": 18.93,
+        "std": 24.76,
+        "count": 4
+      },
+      "x_factor": {
+        "mean": 20.02,
+        "std": 15.62,
+        "count": 4
+      }
+    }
+  },
+  "iron": {
+    "setup": {
+      "left_arm_angle": {
+        "mean": 125.99,
+        "std": 15.8,
+        "count": 2
+      },
+      "right_arm_angle": {
+        "mean": 129.75,
+        "std": 16.98,
+        "count": 2
+      },
+      "spine_angle": {
+        "mean": 31.19,
+        "std": 3.17,
+        "count": 2
+      },
+      "hip_angle": {
+        "mean": 129.29,
+        "std": 2.57,
+        "count": 2
+      },
+      "shoulder_tilt": {
+        "mean": 38.28,
+        "std": 3.15,
+        "count": 2
+      },
+      "knee_bend": {
+        "mean": 28.28,
+        "std": 0.24,
+        "count": 2
+      },
+      "shoulder_rotation": {
+        "mean": 38.28,
+        "std": 3.15,
+        "count": 2
+      },
+      "hip_rotation": {
+        "mean": 15.44,
+        "std": 1.14,
+        "count": 2
+      },
+      "x_factor": {
+        "mean": 22.85,
+        "std": 2.0,
+        "count": 2
+      }
+    },
+    "takeaway": {
+      "left_arm_angle": {
+        "mean": 172.13,
+        "std": 1.42,
+        "count": 2
+      },
+      "right_arm_angle": {
+        "mean": 127.3,
+        "std": 2.17,
+        "count": 2
+      },
+      "spine_angle": {
+        "mean": 35.24,
+        "std": 0.89,
+        "count": 2
+      },
+      "hip_angle": {
+        "mean": 123.81,
+        "std": 0.98,
+        "count": 2
+      },
+      "shoulder_tilt": {
+        "mean": 7.02,
+        "std": 6.38,
+        "count": 2
+      },
+      "knee_bend": {
+        "mean": 33.46,
+        "std": 5.0,
+        "count": 2
+      },
+      "shoulder_rotation": {
+        "mean": 7.02,
+        "std": 6.38,
+        "count": 2
+      },
+      "hip_rotation": {
+        "mean": 7.53,
+        "std": 3.12,
+        "count": 2
+      },
+      "x_factor": {
+        "mean": 3.25,
+        "std": 0.51,
+        "count": 2
+      }
+    },
+    "top_of_backswing": {
+      "left_arm_angle": {
+        "mean": 107.17,
+        "std": 13.78,
+        "count": 2
+      },
+      "right_arm_angle": {
+        "mean": 161.08,
+        "std": 3.43,
+        "count": 2
+      },
+      "spine_angle": {
+        "mean": 17.51,
+        "std": 4.51,
+        "count": 2
+      },
+      "hip_angle": {
+        "mean": 158.78,
+        "std": 4.02,
+        "count": 2
+      },
+      "shoulder_tilt": {
+        "mean": 11.78,
+        "std": 4.88,
+        "count": 2
+      },
+      "knee_bend": {
+        "mean": 4.83,
+        "std": 2.29,
+        "count": 2
+      },
+      "shoulder_rotation": {
+        "mean": 11.78,
+        "std": 4.88,
+        "count": 2
+      },
+      "hip_rotation": {
+        "mean": 4.61,
+        "std": 0.07,
+        "count": 2
+      },
+      "x_factor": {
+        "mean": 7.17,
+        "std": 4.95,
+        "count": 2
+      }
+    },
+    "downswing": {
+      "left_arm_angle": {
+        "mean": 156.82,
+        "std": 4.25,
+        "count": 2
+      },
+      "right_arm_angle": {
+        "mean": 164.06,
+        "std": 3.08,
+        "count": 2
+      },
+      "spine_angle": {
+        "mean": 34.03,
+        "std": 2.9,
+        "count": 2
+      },
+      "hip_angle": {
+        "mean": 129.04,
+        "std": 1.88,
+        "count": 2
+      },
+      "shoulder_tilt": {
+        "mean": 37.6,
+        "std": 31.85,
+        "count": 2
+      },
+      "knee_bend": {
+        "mean": 24.67,
+        "std": 0.37,
+        "count": 2
+      },
+      "shoulder_rotation": {
+        "mean": 37.6,
+        "std": 31.85,
+        "count": 2
+      },
+      "hip_rotation": {
+        "mean": 24.68,
+        "std": 17.37,
+        "count": 2
+      },
+      "x_factor": {
+        "mean": 14.48,
+        "std": 12.92,
+        "count": 2
+      }
+    },
+    "impact": {
+      "left_arm_angle": {
+        "mean": 152.03,
+        "std": 5.21,
+        "count": 2
+      },
+      "right_arm_angle": {
+        "mean": 159.54,
+        "std": 0.74,
+        "count": 2
+      },
+      "spine_angle": {
+        "mean": 33.83,
+        "std": 3.48,
+        "count": 2
+      },
+      "hip_angle": {
+        "mean": 128.99,
+        "std": 2.76,
+        "count": 2
+      },
+      "shoulder_tilt": {
+        "mean": 68.43,
+        "std": 4.75,
+        "count": 2
+      },
+      "knee_bend": {
+        "mean": 24.6,
+        "std": 0.39,
+        "count": 2
+      },
+      "shoulder_rotation": {
+        "mean": 68.43,
+        "std": 4.75,
+        "count": 2
+      },
+      "hip_rotation": {
+        "mean": 40.94,
+        "std": 19.36,
+        "count": 2
+      },
+      "x_factor": {
+        "mean": 27.49,
+        "std": 24.11,
+        "count": 2
+      }
+    },
+    "follow_through": {
+      "left_arm_angle": {
+        "mean": 163.54,
+        "std": 0.73,
+        "count": 2
+      },
+      "right_arm_angle": {
+        "mean": 163.37,
+        "std": 4.29,
+        "count": 2
+      },
+      "spine_angle": {
+        "mean": 33.91,
+        "std": 3.66,
+        "count": 2
+      },
+      "hip_angle": {
+        "mean": 129.06,
+        "std": 3.3,
+        "count": 2
+      },
+      "shoulder_tilt": {
+        "mean": 40.59,
+        "std": 38.21,
+        "count": 2
+      },
+      "knee_bend": {
+        "mean": 24.51,
+        "std": 1.01,
+        "count": 2
+      },
+      "shoulder_rotation": {
+        "mean": 40.59,
+        "std": 38.21,
+        "count": 2
+      },
+      "hip_rotation": {
+        "mean": 24.47,
+        "std": 13.64,
+        "count": 2
+      },
+      "x_factor": {
+        "mean": 24.58,
+        "std": 16.12,
+        "count": 2
+      }
+    }
+  },
+  "all": {
+    "setup": {
+      "left_arm_angle": {
+        "mean": 152.43,
+        "std": 25.8,
+        "count": 6
+      },
+      "right_arm_angle": {
+        "mean": 133.39,
+        "std": 38.16,
+        "count": 6
+      },
+      "spine_angle": {
+        "mean": 24.96,
+        "std": 10.1,
+        "count": 6
+      },
+      "hip_angle": {
+        "mean": 137.42,
+        "std": 10.45,
+        "count": 6
+      },
+      "shoulder_tilt": {
+        "mean": 27.0,
+        "std": 9.48,
+        "count": 6
+      },
+      "knee_bend": {
+        "mean": 23.85,
+        "std": 9.67,
+        "count": 6
+      },
+      "shoulder_rotation": {
+        "mean": 27.0,
+        "std": 9.48,
+        "count": 6
+      },
+      "hip_rotation": {
+        "mean": 13.82,
+        "std": 2.6,
+        "count": 6
+      },
+      "x_factor": {
+        "mean": 13.18,
+        "std": 7.57,
+        "count": 6
+      }
+    },
+    "takeaway": {
+      "left_arm_angle": {
+        "mean": 162.93,
+        "std": 21.71,
+        "count": 6
+      },
+      "right_arm_angle": {
+        "mean": 126.42,
+        "std": 19.38,
+        "count": 6
+      },
+      "spine_angle": {
+        "mean": 27.62,
+        "std": 8.65,
+        "count": 6
+      },
+      "hip_angle": {
+        "mean": 133.63,
+        "std": 13.18,
+        "count": 6
+      },
+      "shoulder_tilt": {
+        "mean": 11.44,
+        "std": 9.48,
+        "count": 6
+      },
+      "knee_bend": {
+        "mean": 31.14,
+        "std": 8.97,
+        "count": 6
+      },
+      "shoulder_rotation": {
+        "mean": 11.44,
+        "std": 9.48,
+        "count": 6
+      },
+      "hip_rotation": {
+        "mean": 8.06,
+        "std": 6.77,
+        "count": 6
+      },
+      "x_factor": {
+        "mean": 4.64,
+        "std": 2.89,
+        "count": 6
+      }
+    },
+    "top_of_backswing": {
+      "left_arm_angle": {
+        "mean": 111.95,
+        "std": 21.74,
+        "count": 6
+      },
+      "right_arm_angle": {
+        "mean": 156.84,
+        "std": 13.28,
+        "count": 6
+      },
+      "spine_angle": {
+        "mean": 16.4,
+        "std": 3.13,
+        "count": 6
+      },
+      "hip_angle": {
+        "mean": 162.78,
+        "std": 4.93,
+        "count": 6
+      },
+      "shoulder_tilt": {
+        "mean": 12.63,
+        "std": 4.09,
+        "count": 6
+      },
+      "knee_bend": {
+        "mean": 8.91,
+        "std": 8.71,
+        "count": 6
+      },
+      "shoulder_rotation": {
+        "mean": 12.63,
+        "std": 4.09,
+        "count": 6
+      },
+      "hip_rotation": {
+        "mean": 5.3,
+        "std": 1.68,
+        "count": 6
+      },
+      "x_factor": {
+        "mean": 7.67,
+        "std": 4.57,
+        "count": 6
+      }
+    },
+    "downswing": {
+      "left_arm_angle": {
+        "mean": 106.76,
+        "std": 36.61,
+        "count": 6
+      },
+      "right_arm_angle": {
+        "mean": 149.11,
+        "std": 14.38,
+        "count": 6
+      },
+      "spine_angle": {
+        "mean": 18.93,
+        "std": 11.15,
+        "count": 6
+      },
+      "hip_angle": {
+        "mean": 156.05,
+        "std": 19.63,
+        "count": 6
+      },
+      "shoulder_tilt": {
+        "mean": 18.75,
+        "std": 23.16,
+        "count": 6
+      },
+      "knee_bend": {
+        "mean": 15.0,
+        "std": 7.66,
+        "count": 6
+      },
+      "shoulder_rotation": {
+        "mean": 18.75,
+        "std": 23.16,
+        "count": 6
+      },
+      "hip_rotation": {
+        "mean": 11.04,
+        "std": 13.95,
+        "count": 6
+      },
+      "x_factor": {
+        "mean": 9.61,
+        "std": 8.92,
+        "count": 6
+      }
+    },
+    "impact": {
+      "left_arm_angle": {
+        "mean": 141.93,
+        "std": 47.32,
+        "count": 6
+      },
+      "right_arm_angle": {
+        "mean": 152.92,
+        "std": 29.63,
+        "count": 6
+      },
+      "spine_angle": {
+        "mean": 19.1,
+        "std": 13.32,
+        "count": 6
+      },
+      "hip_angle": {
+        "mean": 148.54,
+        "std": 16.8,
+        "count": 6
+      },
+      "shoulder_tilt": {
+        "mean": 29.57,
+        "std": 27.69,
+        "count": 6
+      },
+      "knee_bend": {
+        "mean": 15.62,
+        "std": 8.28,
+        "count": 6
+      },
+      "shoulder_rotation": {
+        "mean": 29.57,
+        "std": 27.69,
+        "count": 6
+      },
+      "hip_rotation": {
+        "mean": 27.75,
+        "std": 28.91,
+        "count": 6
+      },
+      "x_factor": {
+        "mean": 23.48,
+        "std": 24.95,
+        "count": 6
+      }
+    },
+    "follow_through": {
+      "left_arm_angle": {
+        "mean": 167.76,
+        "std": 4.71,
+        "count": 6
+      },
+      "right_arm_angle": {
+        "mean": 167.23,
+        "std": 5.51,
+        "count": 6
+      },
+      "spine_angle": {
+        "mean": 24.1,
+        "std": 11.62,
+        "count": 6
+      },
+      "hip_angle": {
+        "mean": 140.61,
+        "std": 12.28,
+        "count": 6
+      },
+      "shoulder_tilt": {
+        "mean": 24.35,
+        "std": 25.49,
+        "count": 6
+      },
+      "knee_bend": {
+        "mean": 19.45,
+        "std": 10.36,
+        "count": 6
+      },
+      "shoulder_rotation": {
+        "mean": 24.35,
+        "std": 25.49,
+        "count": 6
+      },
+      "hip_rotation": {
+        "mean": 20.78,
+        "std": 21.85,
+        "count": 6
+      },
+      "x_factor": {
+        "mean": 21.54,
+        "std": 15.93,
+        "count": 6
+      }
+    }
+  }
+}

@@ -1,0 +1,415 @@
+{
+  "driver": {
+    "Rory_McIlroy_Driver_Front.mov": {
+      "setup": {
+        "left_arm_angle": 178.14909872495673,
+        "right_arm_angle": 166.79129309933998,
+        "spine_angle": 3.1067355505573264,
+        "hip_angle": 158.26291111991245,
+        "shoulder_tilt": 12.794724588603714,
+        "knee_bend": 2.623587184185098,
+        "shoulder_rotation": 12.794724588603714,
+        "hip_rotation": 10.028950293104714,
+        "x_factor": 2.765774295499
+      },
+      "takeaway": {
+        "left_arm_angle": 114.98512565577708,
+        "right_arm_angle": 163.8973633893981,
+        "spine_angle": 10.394380506874203,
+        "hip_angle": 161.45544922451376,
+        "shoulder_tilt": 11.867774725524356,
+        "knee_bend": 12.362017267398429,
+        "shoulder_rotation": 11.867774725524356,
+        "hip_rotation": 3.066766535159701,
+        "x_factor": 8.801008190364655
+      },
+      "top_of_backswing": {
+        "left_arm_angle": 149.46645288302383,
+        "right_arm_angle": 136.40741461822773,
+        "spine_angle": 15.854108537769283,
+        "hip_angle": 160.1012243032337,
+        "shoulder_tilt": 15.17071710739043,
+        "knee_bend": 28.09312121092934,
+        "shoulder_rotation": 15.17071710739043,
+        "hip_rotation": 2.820731462751496,
+        "x_factor": 12.349985644638934
+      },
+      "downswing": {
+        "left_arm_angle": 84.01639386941697,
+        "right_arm_angle": 129.7613081720557,
+        "spine_angle": 12.626980150408238,
+        "hip_angle": 162.03709602957144,
+        "shoulder_tilt": 17.673099772167717,
+        "knee_bend": 17.428802827384118,
+        "shoulder_rotation": 17.673099772167717,
+        "hip_rotation": 3.3112789318566827,
+        "x_factor": 14.361820840311035
+      },
+      "impact": {
+        "left_arm_angle": 174.76886245701905,
+        "right_arm_angle": 162.96415943083684,
+        "spine_angle": 1.0510783368986651,
+        "hip_angle": 155.91412411331564,
+        "shoulder_tilt": 13.520316778874303,
+        "knee_bend": 3.832479101073176,
+        "shoulder_rotation": 13.520316778874303,
+        "hip_rotation": 6.549674960585378,
+        "x_factor": 6.970641818288925
+      },
+      "follow_through": {
+        "left_arm_angle": 176.62934659120904,
+        "right_arm_angle": 162.24773262075044,
+        "spine_angle": 1.9607797013089843,
+        "hip_angle": 156.21225208925222,
+        "shoulder_tilt": 13.698131685154692,
+        "knee_bend": 4.117300753800819,
+        "shoulder_rotation": 13.698131685154692,
+        "hip_rotation": 7.259306495004324,
+        "x_factor": 6.438825190150368
+      }
+    },
+    "Scottie_Scheffler_Driver_Back.mov": {
+      "setup": {
+        "left_arm_angle": 174.28230077583936,
+        "right_arm_angle": 149.37189003240945,
+        "spine_angle": 26.939023310733507,
+        "hip_angle": 141.48155880978925,
+        "shoulder_tilt": 25.176232171528653,
+        "knee_bend": 25.91302130398884,
+        "shoulder_rotation": 25.176232171528653,
+        "hip_rotation": 12.529295910052298,
+        "x_factor": 12.646936261476355
+      },
+      "takeaway": {
+        "left_arm_angle": 166.38456836475078,
+        "right_arm_angle": 99.53040537029518,
+        "spine_angle": 30.94635427609006,
+        "hip_angle": 129.01200066291372,
+        "shoulder_tilt": 30.211265444716332,
+        "knee_bend": 36.43055158425335,
+        "shoulder_rotation": 30.211265444716332,
+        "hip_rotation": 22.071527778401958,
+        "x_factor": 8.139737666314375
+      },
+      "top_of_backswing": {
+        "left_arm_angle": 123.9075073383756,
+        "right_arm_angle": 177.53097248697142,
+        "spine_angle": 18.722481378211548,
+        "hip_angle": 162.9448968143631,
+        "shoulder_tilt": 7.33665112138849,
+        "knee_bend": 6.40058560986364,
+        "shoulder_rotation": 7.33665112138849,
+        "hip_rotation": 8.368429677508333,
+        "x_factor": 1.0317785561198427
+      },
+      "downswing": {
+        "left_arm_angle": 93.56458832431449,
+        "right_arm_angle": 157.92911003591038,
+        "spine_angle": 14.470852347175152,
+        "hip_angle": 167.18042765893944,
+        "shoulder_tilt": 2.054512561755885,
+        "knee_bend": 8.788336550013753,
+        "shoulder_rotation": 2.054512561755885,
+        "hip_rotation": 6.191783373604125,
+        "x_factor": 4.137270811848239
+      },
+      "impact": {
+        "left_arm_angle": 160.63270700042338,
+        "right_arm_angle": 170.01565440164092,
+        "spine_angle": 27.137553378793307,
+        "hip_angle": 142.1206674884113,
+        "shoulder_tilt": 9.042059281176149,
+        "knee_bend": 21.644040888229682,
+        "shoulder_rotation": 9.042059281176149,
+        "hip_rotation": 74.01330733491669,
+        "x_factor": 64.97124805374054
+      },
+      "follow_through": {
+        "left_arm_angle": 164.20683908897774,
+        "right_arm_angle": 169.86043783680373,
+        "spine_angle": 28.168244233558855,
+        "hip_angle": 141.06134635630406,
+        "shoulder_tilt": 16.11181582393002,
+        "knee_bend": 22.004983372254245,
+        "shoulder_rotation": 16.11181582393002,
+        "hip_rotation": 61.55218879015672,
+        "x_factor": 45.440372966226704
+      }
+    },
+    "Tiger_Woods_Driver_Back.mov": {
+      "setup": {
+        "left_arm_angle": 133.40223381168792,
+        "right_arm_angle": 58.12172065067931,
+        "spine_angle": 30.37347206315159,
+        "hip_angle": 129.83186302202773,
+        "shoulder_tilt": 28.084718646891787,
+        "knee_bend": 31.589646733525484,
+        "shoulder_rotation": 28.084718646891787,
+        "hip_rotation": 17.49219245377205,
+        "x_factor": 10.592526193119738
+      },
+      "takeaway": {
+        "left_arm_angle": 177.43315020945062,
+        "right_arm_angle": 115.90861899110415,
+        "spine_angle": 30.264857868878313,
+        "hip_angle": 127.07166028898095,
+        "shoulder_tilt": 8.757259355645488,
+        "knee_bend": 34.40739020558726,
+        "shoulder_rotation": 8.757259355645488,
+        "hip_rotation": 5.129566229845494,
+        "x_factor": 3.6276931257999934
+      },
+      "top_of_backswing": {
+        "left_arm_angle": 97.55301317825383,
+        "right_arm_angle": 160.0360939626687,
+        "spine_angle": 13.402955463576427,
+        "hip_angle": 164.91466516686768,
+        "shoulder_tilt": 16.7022133257256,
+        "knee_bend": 5.096104583974423,
+        "shoulder_rotation": 16.7022133257256,
+        "hip_rotation": 5.910578290223808,
+        "x_factor": 10.791635035501795
+      },
+      "downswing": {
+        "left_arm_angle": 63.724147897973744,
+        "right_arm_angle": 131.2032738594386,
+        "spine_angle": 5.646036259244065,
+        "hip_angle": 173.13405861405695,
+        "shoulder_tilt": 8.160964642042474,
+        "knee_bend": 7.571929924154844,
+        "shoulder_rotation": 8.160964642042474,
+        "hip_rotation": 4.305988670865411,
+        "x_factor": 3.854975971177063
+      },
+      "impact": {
+        "left_arm_angle": 38.32778053133866,
+        "right_arm_angle": 88.17134262502829,
+        "spine_angle": 5.768098262254511,
+        "hip_angle": 174.39954797784267,
+        "shoulder_tilt": 10.922500348875984,
+        "knee_bend": 9.934154280715134,
+        "shoulder_rotation": 10.922500348875984,
+        "hip_rotation": 3.0215877481986566,
+        "x_factor": 7.9009126006773265
+      },
+      "follow_through": {
+        "left_arm_angle": 169.74808454778602,
+        "right_arm_angle": 168.17121685364077,
+        "spine_angle": 29.763165333781412,
+        "hip_angle": 130.93109119395024,
+        "shoulder_tilt": 26.915316137489015,
+        "knee_bend": 33.9416612510458,
+        "shoulder_rotation": 26.915316137489015,
+        "hip_rotation": 6.713284710265555,
+        "x_factor": 20.20203142722346
+      }
+    },
+    "Tommy_Fleetwood_Driver_Back.mov": {
+      "setup": {
+        "left_arm_angle": 176.8042133558001,
+        "right_arm_angle": 166.54868407518344,
+        "spine_angle": 26.959831293077222,
+        "hip_angle": 136.33810940343596,
+        "shoulder_tilt": 19.35541013457442,
+        "knee_bend": 26.420589964493303,
+        "shoulder_rotation": 19.35541013457442,
+        "hip_rotation": 11.989416648769577,
+        "x_factor": 7.365993485804843
+      },
+      "takeaway": {
+        "left_arm_angle": 174.49937826022293,
+        "right_arm_angle": 124.57853665554194,
+        "spine_angle": 23.640035731381868,
+        "hip_angle": 136.61673946206258,
+        "shoulder_tilt": 3.766686842199988,
+        "knee_bend": 36.68362607120909,
+        "shoulder_rotation": 3.766686842199988,
+        "hip_rotation": 3.0229631439999594,
+        "x_factor": 0.7437236982000286
+      },
+      "top_of_backswing": {
+        "left_arm_angle": 86.40891927671213,
+        "right_arm_angle": 144.92228233039262,
+        "spine_angle": 15.393074571323828,
+        "hip_angle": 171.14547234546922,
+        "shoulder_tilt": 12.994991779107584,
+        "knee_bend": 4.216936394487632,
+        "shoulder_rotation": 12.994991779107584,
+        "hip_rotation": 5.465050192358444,
+        "x_factor": 7.529941586749141
+      },
+      "downswing": {
+        "left_arm_angle": 85.59036753084607,
+        "right_arm_angle": 147.64060402825382,
+        "spine_angle": 12.799668089335912,
+        "hip_angle": 175.8879368759816,
+        "shoulder_tilt": 9.405788425907506,
+        "knee_bend": 6.898157306425148,
+        "shoulder_rotation": 9.405788425907506,
+        "hip_rotation": 3.07224486248054,
+        "x_factor": 6.333543563426966
+      },
+      "impact": {
+        "left_arm_angle": 173.7817852298229,
+        "right_arm_angle": 177.27683091571583,
+        "spine_angle": 12.978607718950233,
+        "hip_angle": 160.80923748149002,
+        "shoulder_tilt": 7.075626643889535,
+        "knee_bend": 9.126465251104193,
+        "shoulder_rotation": 7.075626643889535,
+        "hip_rotation": 1.00142042901399,
+        "x_factor": 6.074206214875545
+      },
+      "follow_through": {
+        "left_arm_angle": 168.89384808584504,
+        "right_arm_angle": 176.3489290595058,
+        "spine_angle": 16.892024164666218,
+        "hip_angle": 157.31882962353302,
+        "shoulder_tilt": 8.180440720712909,
+        "knee_bend": 7.631469951388681,
+        "shoulder_rotation": 8.180440720712909,
+        "hip_rotation": 0.19655802110051468,
+        "x_factor": 7.983882699612394
+      }
+    }
+  },
+  "iron": {
+    "Rory_McIlroy_Iron_Swing_Back.mov": {
+      "setup": {
+        "left_arm_angle": 110.18591184744794,
+        "right_arm_angle": 112.77553531419218,
+        "spine_angle": 34.361556559757595,
+        "hip_angle": 126.72387119830708,
+        "shoulder_tilt": 41.42619537878758,
+        "knee_bend": 28.0389952336333,
+        "shoulder_rotation": 41.42619537878758,
+        "hip_rotation": 16.578793768463953,
+        "x_factor": 24.84740161032363
+      },
+      "takeaway": {
+        "left_arm_angle": 170.71007526006295,
+        "right_arm_angle": 129.47105306963914,
+        "spine_angle": 34.34777544905409,
+        "hip_angle": 124.78768055896526,
+        "shoulder_tilt": 0.6470194260782876,
+        "knee_bend": 38.46830897024431,
+        "shoulder_rotation": 0.6470194260782876,
+        "hip_rotation": 4.40647057264195,
+        "x_factor": 3.759451146563663
+      },
+      "top_of_backswing": {
+        "left_arm_angle": 120.94676030297916,
+        "right_arm_angle": 157.65570191553547,
+        "spine_angle": 22.01432552378906,
+        "hip_angle": 154.7577147839126,
+        "shoulder_tilt": 6.89799009307419,
+        "knee_bend": 7.122284383896329,
+        "shoulder_rotation": 6.89799009307419,
+        "hip_rotation": 4.68240916625433,
+        "x_factor": 2.21558092681986
+      },
+      "downswing": {
+        "left_arm_angle": 152.5679243095809,
+        "right_arm_angle": 160.98669414123927,
+        "spine_angle": 36.92429951395219,
+        "hip_angle": 127.15760210501013,
+        "shoulder_tilt": 69.45253444403173,
+        "knee_bend": 25.03849882674473,
+        "shoulder_rotation": 69.45253444403173,
+        "hip_rotation": 42.05069217032383,
+        "x_factor": 27.4018422737079
+      },
+      "impact": {
+        "left_arm_angle": 157.24448645001044,
+        "right_arm_angle": 160.27771222224644,
+        "spine_angle": 37.31499237873253,
+        "hip_angle": 126.22898928495874,
+        "shoulder_tilt": 63.68382407140076,
+        "knee_bend": 24.996661147604172,
+        "shoulder_rotation": 63.68382407140076,
+        "hip_rotation": 60.30339023262614,
+        "x_factor": 3.3804338387746142
+      },
+      "follow_through": {
+        "left_arm_angle": 164.26786459682572,
+        "right_arm_angle": 159.08410264928838,
+        "spine_angle": 37.568741074275145,
+        "hip_angle": 125.76133056112607,
+        "shoulder_tilt": 78.80439095561907,
+        "knee_bend": 25.522746950113415,
+        "shoulder_rotation": 78.80439095561907,
+        "hip_rotation": 38.10524252033974,
+        "x_factor": 40.69914843527933
+      }
+    },
+    "Tiger_Woods_Iron_Back.mov": {
+      "setup": {
+        "left_arm_angle": 141.78446002243854,
+        "right_arm_angle": 146.7272255945738,
+        "spine_angle": 28.022393141443896,
+        "hip_angle": 131.86033826853608,
+        "shoulder_tilt": 35.13521607569166,
+        "knee_bend": 28.511941483097885,
+        "shoulder_rotation": 35.13521607569166,
+        "hip_rotation": 14.2912816077787,
+        "x_factor": 20.84393446791296
+      },
+      "takeaway": {
+        "left_arm_angle": 173.55926076338326,
+        "right_arm_angle": 125.13189631931544,
+        "spine_angle": 36.137522283183316,
+        "hip_angle": 122.82658258441174,
+        "shoulder_tilt": 13.399673241112595,
+        "knee_bend": 28.460003319994954,
+        "shoulder_rotation": 13.399673241112595,
+        "hip_rotation": 10.652003557970772,
+        "x_factor": 2.7476696831418224
+      },
+      "top_of_backswing": {
+        "left_arm_angle": 93.38764640387902,
+        "right_arm_angle": 164.5104355676531,
+        "spine_angle": 13.003612559968781,
+        "hip_angle": 162.793944746786,
+        "shoulder_tilt": 16.663121714830616,
+        "knee_bend": 2.5326240690041146,
+        "shoulder_rotation": 16.663121714830616,
+        "hip_rotation": 4.542028999623514,
+        "x_factor": 12.121092715207102
+      },
+      "downswing": {
+        "left_arm_angle": 161.07112701026318,
+        "right_arm_angle": 167.14204514626394,
+        "spine_angle": 31.133546226307043,
+        "hip_angle": 130.91928735723957,
+        "shoulder_tilt": 5.7498022956659725,
+        "knee_bend": 24.292309160207793,
+        "shoulder_rotation": 5.7498022956659725,
+        "hip_rotation": 7.314973169662807,
+        "x_factor": 1.5651708739968342
+      },
+      "impact": {
+        "left_arm_angle": 146.8172096680674,
+        "right_arm_angle": 158.79550232295566,
+        "spine_angle": 30.348603714922213,
+        "hip_angle": 131.75543831419003,
+        "shoulder_tilt": 73.1857225180481,
+        "knee_bend": 24.21147106979656,
+        "shoulder_rotation": 73.1857225180481,
+        "hip_rotation": 21.584556190165245,
+        "x_factor": 51.60116632788285
+      },
+      "follow_through": {
+        "left_arm_angle": 162.8125048098019,
+        "right_arm_angle": 167.6582871530585,
+        "spine_angle": 30.25523150176999,
+        "hip_angle": 132.36804220722053,
+        "shoulder_tilt": 2.3745549403405732,
+        "knee_bend": 23.49809732665514,
+        "shoulder_rotation": 2.3745549403405732,
+        "hip_rotation": 10.832961945737907,
+        "x_factor": 8.458407005397333
+      }
+    }
+  },
+  "unknown": {}
+}
