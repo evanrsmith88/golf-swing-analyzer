@@ -1,7 +1,7 @@
 import cv2
 import mediapipe as mp
 import os
-from angles import calculate_angle, calculate_spine_angle
+from angles import calculate_angle, calculate_spine_angle, calculate_line_tilt
 
 def draw_text(frame, text, position):
     cv2.putText(frame, text, position, cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 0, 0), 5)
@@ -46,16 +46,7 @@ with mp_pose.Pose() as pose:
             wrist = (left_wrist.x * width, left_wrist.y * height)
 
             left_elbow_angle = calculate_angle(shoulder, elbow, wrist)
-
-            cv2.putText(
-                frame,
-                f"Left elbow: {int(left_elbow_angle)} deg",
-                (50, 50),
-                cv2.FONT_HERSHEY_SIMPLEX,
-                1,
-                (0, 0, 255),
-                2
-            )
+            draw_text(frame, f"Left arm angle: {int(left_elbow_angle)} deg", (50, 50))
 
             right_shoulder = landmarks[mp_pose.PoseLandmark.RIGHT_SHOULDER.value]
             right_elbow = landmarks[mp_pose.PoseLandmark.RIGHT_ELBOW.value]
@@ -66,16 +57,7 @@ with mp_pose.Pose() as pose:
             wrist = (right_wrist.x * width, right_wrist.y * height)
 
             right_elbow_angle = calculate_angle(shoulder, elbow, wrist)
-
-            cv2.putText(
-                frame,
-                f"Right elbow: {int(right_elbow_angle)} deg",
-                (50, 100),
-                cv2.FONT_HERSHEY_SIMPLEX,
-                1,
-                (0, 0, 255),
-                2
-            )
+            draw_text(frame, f"Right arm angle: {int(right_elbow_angle)} deg", (50, 100))
 
             # Spine angle
             left_shoulder = landmarks[mp_pose.PoseLandmark.LEFT_SHOULDER.value]
@@ -101,6 +83,76 @@ with mp_pose.Pose() as pose:
             spine_angle = calculate_spine_angle(shoulder_midpoint, hip_midpoint)
 
             draw_text(frame, f"Spine angle: {int(spine_angle)} deg", (50, 150))
+
+            # Hip angle (average of left and right hip joint angles)
+            left_knee = landmarks[mp_pose.PoseLandmark.LEFT_KNEE.value]
+            right_knee = landmarks[mp_pose.PoseLandmark.RIGHT_KNEE.value]
+
+            left_knee_point = (left_knee.x * width, left_knee.y * height)
+            right_knee_point = (right_knee.x * width, right_knee.y * height)
+
+            left_hip_angle = calculate_angle(left_shoulder_point, left_hip_point, left_knee_point)
+            right_hip_angle = calculate_angle(right_shoulder_point, right_hip_point, right_knee_point)
+            hip_angle = (left_hip_angle + right_hip_angle) / 2
+
+            draw_text(frame, f"Hip angle: {int(hip_angle)} deg", (50, 200))
+
+            # Shoulder tilt relative to horizontal
+            shoulder_tilt = calculate_line_tilt(left_shoulder_point, right_shoulder_point)
+            draw_text(frame, f"Shoulder tilt: {int(shoulder_tilt)} deg", (50, 250))
+
+            cv2.line(
+                frame,
+                (int(left_shoulder_point[0]), int(left_shoulder_point[1])),
+                (int(right_shoulder_point[0]), int(right_shoulder_point[1])),
+                (0, 0, 255),
+                3
+            )
+
+            # Knee bend (average bend from left and right knees)
+            left_ankle = landmarks[mp_pose.PoseLandmark.LEFT_ANKLE.value]
+            right_ankle = landmarks[mp_pose.PoseLandmark.RIGHT_ANKLE.value]
+
+            left_ankle_point = (left_ankle.x * width, left_ankle.y * height)
+            right_ankle_point = (right_ankle.x * width, right_ankle.y * height)
+
+            left_knee_joint_angle = calculate_angle(left_hip_point, left_knee_point, left_ankle_point)
+            right_knee_joint_angle = calculate_angle(right_hip_point, right_knee_point, right_ankle_point)
+
+            left_knee_bend = max(0, 180 - left_knee_joint_angle)
+            right_knee_bend = max(0, 180 - right_knee_joint_angle)
+            knee_bend = (left_knee_bend + right_knee_bend) / 2
+
+            draw_text(frame, f"Knee bend: {int(knee_bend)} deg", (50, 300))
+
+            cv2.line(
+                frame,
+                (int(left_hip_point[0]), int(left_hip_point[1])),
+                (int(left_knee_point[0]), int(left_knee_point[1])),
+                (0, 0, 255),
+                3
+            )
+            cv2.line(
+                frame,
+                (int(left_knee_point[0]), int(left_knee_point[1])),
+                (int(left_ankle_point[0]), int(left_ankle_point[1])),
+                (0, 0, 255),
+                3
+            )
+            cv2.line(
+                frame,
+                (int(right_hip_point[0]), int(right_hip_point[1])),
+                (int(right_knee_point[0]), int(right_knee_point[1])),
+                (0, 0, 255),
+                3
+            )
+            cv2.line(
+                frame,
+                (int(right_knee_point[0]), int(right_knee_point[1])),
+                (int(right_ankle_point[0]), int(right_ankle_point[1])),
+                (0, 0, 255),
+                3
+            )
 
             cv2.line(
                 frame,

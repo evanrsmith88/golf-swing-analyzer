@@ -40,3 +40,23 @@ def calculate_spine_angle(shoulder_midpoint, hip_midpoint):
     angle = math.degrees(math.atan2(abs(dx), abs(dy)))
 
     return angle
+
+def calculate_line_tilt(point_a, point_b):
+    """
+    Calculates the tilt of a line segment relative to horizontal.
+    0 degrees = perfectly horizontal
+    90 degrees = perfectly vertical
+    """
+
+    ax, ay = point_a
+    bx, by = point_b
+
+    dx = bx - ax
+    dy = by - ay
+
+    angle = abs(math.degrees(math.atan2(dy, dx)))
+
+    if angle > 90:
+        angle = 180 - angle
+
+    return angle
