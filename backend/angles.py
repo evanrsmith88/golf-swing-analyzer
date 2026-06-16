@@ -60,3 +60,10 @@ def calculate_line_tilt(point_a, point_b):
         angle = 180 - angle
 
     return angle
+
+def calculate_rotation_angle(left_point, right_point):
+    """
+    Calculates how rotated a body line is relative to horizontal.
+    Used for shoulder line and hip line.
+    """
+    return calculate_line_tilt(left_point, right_point)
