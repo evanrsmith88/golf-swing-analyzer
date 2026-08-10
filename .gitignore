@@ -216,3 +216,18 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Next.js
+node_modules/
+.next/
+
+# Generated videos
+uploads/
+processed/
+
+# Mac
+.DS_Store
+
+# Videos
+backend/sample_videos/
+backend/processed_videos/

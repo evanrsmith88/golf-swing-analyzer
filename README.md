@@ -16,3 +16,12 @@ A computer vision app that analyzes golf swing videos using pose estimation.
 - Frontend: Next.js, React, Tailwind
 - Backend: Python, FastAPI
 - Computer Vision: OpenCV, MediaPipe
+
+## Run Pipeline
+
+- ../backend
+- source ../.venv/bin/activate
+- python analyze_swing_pipeline.py
+- python compute_statistics.py
+- python compare_with_pros.py
+
