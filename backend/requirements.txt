@@ -1,0 +1,8 @@
+fastapi==0.128.8
+uvicorn[standard]==0.39.0
+python-multipart==0.0.20
+# 0.10.21 still includes the legacy mp.solutions.pose API used by this code
+mediapipe==0.10.21
+numpy==1.26.4
+# Bundles an ffmpeg binary (with H.264) for converting overlay videos so browsers can play them
+imageio-ffmpeg==0.6.0

@@ -6,6 +6,7 @@ from pathlib import Path
 from angles import calculate_angle, calculate_spine_angle, calculate_line_tilt, calculate_rotation_angle
 
 mp_pose = mp.solutions.pose
+mp_draw = mp.solutions.drawing_utils
 
 def extract_swing_type_from_filename(filename):
     """
@@ -20,19 +21,58 @@ def extract_swing_type_from_filename(filename):
     else:
         return 'unknown'
 
-def process_video(video_path):
+def find_top_and_impact(valid_frames, wrist_y_by_frame):
+    """
+    Find the top-of-backswing and impact frames from the lead wrist height.
+    The highest wrist point is often the finish, not the top, so only the first
+    raise is used: top = highest point before the wrist drops back near address
+    height, impact = lowest point of that drop.
+    Returns (top_frame, impact_frame), or None if that pattern isn't found.
+    """
+    # Smooth over 5 frames to ignore landmark jitter. Smaller y = higher in the image.
+    smoothed = {}
+    for i, frame in enumerate(valid_frames):
+        window = valid_frames[max(0, i - 2):i + 3]
+        smoothed[frame] = sum(wrist_y_by_frame[f] for f in window) / len(window)
+
+    address_y = smoothed[valid_frames[0]]
+    span = address_y - min(smoothed.values())
+    if span <= 0:
+        return None
+
+    raised_y = address_y - 0.5 * span
+    returned_y = address_y - 0.15 * span
+
+    backswing_start = next((f for f in valid_frames if smoothed[f] < raised_y), None)
+    if backswing_start is None:
+        return None
+
+    returned = next((f for f in valid_frames if f > backswing_start and smoothed[f] > returned_y), None)
+    if returned is None:
+        return None
+
+    follow_through = next((f for f in valid_frames if f > returned and smoothed[f] < raised_y), valid_frames[-1])
+
+    top_frame = min((f for f in valid_frames if backswing_start <= f <= returned), key=smoothed.get)
+    impact_frame = max((f for f in valid_frames if returned <= f <= follow_through), key=smoothed.get)
+    return top_frame, impact_frame
+
+def process_video(video_path, overlay_path=None, max_height=None):
     """
     Process a single video and extract phase angles.
     Returns a dict with phase angles or None if processing fails.
+
+    overlay_path: if set, also write a video with the pose skeleton drawn on it (mp4v codec).
+    max_height: if set, downscale taller frames to this height before pose detection.
     """
     cap = cv2.VideoCapture(video_path)
-    
+
     if not cap.isOpened():
         print(f"Failed to open video: {video_path}")
         return None
-    
-    width = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
-    height = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
+
+    fps = cap.get(cv2.CAP_PROP_FPS) or 30
+    overlay_writer = None
 
     frame_number = 0
     highest_wrist_y = float("inf")
@@ -47,8 +87,23 @@ def process_video(video_path):
             if not success:
                 break
 
+            if max_height and frame.shape[0] > max_height:
+                scale = max_height / frame.shape[0]
+                frame = cv2.resize(frame, (int(frame.shape[1] * scale), max_height))
+
+            # Use the decoded frame size; container metadata can be wrong for rotated phone videos
+            height, width = frame.shape[:2]
+
             rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
             results = pose.process(rgb)
+
+            if overlay_path:
+                if overlay_writer is None:
+                    fourcc = cv2.VideoWriter_fourcc(*"mp4v")
+                    overlay_writer = cv2.VideoWriter(overlay_path, fourcc, fps, (width, height))
+                if results.pose_landmarks:
+                    mp_draw.draw_landmarks(frame, results.pose_landmarks, mp_pose.POSE_CONNECTIONS)
+                overlay_writer.write(frame)
 
             if results.pose_landmarks:
                 landmarks = results.pose_landmarks.landmark
@@ -154,6 +209,8 @@ def process_video(video_path):
             frame_number += 1
 
     cap.release()
+    if overlay_writer is not None:
+        overlay_writer.release()
 
     if not wrist_y_by_frame or not angle_metrics_by_frame:
         print(f"No landmarks detected in video: {video_path}")
@@ -163,15 +220,20 @@ def process_video(video_path):
     setup_frame = valid_frames[0]
     setup_wrist_y = wrist_y_by_frame[setup_frame]
 
-    post_top_frames = [frame for frame in valid_frames if frame > top_backswing_frame]
+    top_and_impact = find_top_and_impact(valid_frames, wrist_y_by_frame)
 
-    if post_top_frames:
-        impact_frame = min(
-            post_top_frames,
-            key=lambda frame: abs(wrist_y_by_frame[frame] - setup_wrist_y)
-        )
+    if top_and_impact:
+        top_backswing_frame, impact_frame = top_and_impact
     else:
-        impact_frame = top_backswing_frame
+        post_top_frames = [frame for frame in valid_frames if frame > top_backswing_frame]
+
+        if post_top_frames:
+            impact_frame = min(
+                post_top_frames,
+                key=lambda frame: abs(wrist_y_by_frame[frame] - setup_wrist_y)
+            )
+        else:
+            impact_frame = top_backswing_frame
 
     backswing_span = max(1, top_backswing_frame - setup_frame)
     setup_end_frame = setup_frame + int(0.15 * backswing_span)

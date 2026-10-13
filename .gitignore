@@ -14,8 +14,8 @@ dist/
 downloads/
 eggs/
 .eggs/
-lib/
-lib64/
+/lib/
+/lib64/
 parts/
 sdist/
 var/
@@ -231,3 +231,7 @@ processed/
 # Videos
 backend/sample_videos/
 backend/processed_videos/
+/sample_videos/
+
+# Claude Code config
+.claude/
