@@ -2,7 +2,7 @@
 
 A computer vision app that analyzes golf swing videos using pose estimation and compares your key positions to pro golfers.
 
-**Live app:** _coming soon_ · **API:** _coming soon_
+**Live app:** _coming soon_ · **API:** https://swinglabs-api-111553776437.us-central1.run.app ([docs](https://swinglabs-api-111553776437.us-central1.run.app/docs))
 
 | Desktop | Mobile |
 | --- | --- |
@@ -30,7 +30,7 @@ Film from down-the-line with your full body in frame. Videos are limited to 20 s
 ## Tech Stack
 
 - Frontend: Next.js, React, Tailwind (deployed on Vercel)
-- Backend: Python, FastAPI (deployed as a Docker container on Hugging Face Spaces)
+- Backend: Python, FastAPI (deployed as a Docker container on Google Cloud Run)
 - Computer Vision: OpenCV, MediaPipe
 
 ## Run locally
@@ -59,11 +59,21 @@ The frontend calls `http://localhost:8000` by default. To use another backend, s
 
 ## Deploy
 
-**Backend → Hugging Face Spaces (free, 2 CPU / 16 GB RAM).**
-Create a new Space with the **Docker** SDK, then upload the contents of `backend/` (it already has the `Dockerfile` and the Space config in `backend/README.md`). In the Space settings, add the variable `ALLOWED_ORIGINS` = your Vercel URL (e.g. `https://swinglabs.vercel.app`). The API will be at `https://<username>-<space-name>.hf.space`. Free Spaces sleep after ~48 hours without traffic; the first request after that takes about a minute.
+**Backend → Google Cloud Run (free tier).**
+Cloud Build builds `backend/Dockerfile` in the cloud, so you don't need Docker locally. Needs the [gcloud CLI](https://cloud.google.com/sdk/docs/install) and a Google Cloud project with billing enabled (usage at this scale stays inside the free tier).
+
+```bash
+gcloud run deploy swinglabs-api --source backend --region us-central1 \
+  --allow-unauthenticated --use-http2 --memory 2Gi --cpu 2 --timeout 300 \
+  --max-instances 1 --set-env-vars "ALLOWED_ORIGINS=https://<your-app>.vercel.app"
+```
+
+- `--use-http2` lifts Cloud Run's 32 MB upload limit (the container runs Hypercorn, which speaks HTTP/2).
+- `--max-instances 1` keeps each overlay video on the same instance that serves it (videos live in `/tmp`).
+- The service scales to zero when idle, so the first request after a quiet period takes ~10–30 s.
 
 **Frontend → Vercel (free).**
-Import the GitHub repo in Vercel, set **Root Directory** to `frontend`, and add the environment variable `NEXT_PUBLIC_API_URL` = your Space URL. It's baked in at build time, so redeploy after changing it.
+Import the GitHub repo in Vercel, set **Root Directory** to `frontend`, and add the environment variable `NEXT_PUBLIC_API_URL` = the Cloud Run URL printed by the deploy. It's baked in at build time, so redeploy after changing it.
 
 ## Rebuild the pro benchmark
 
